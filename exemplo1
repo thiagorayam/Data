@@ -31,7 +31,12 @@
         "colab": {}
       },
       "source": [
-        ""
+        "import numpy as np\n",
+        "import pandas as pd\n",
+        "houses=pd.read_csv(\"https://raw.githubusercontent.com/ProfLuciano/intro_cd/gh-pages/data/recife.csv\",encoding = \"ISO-8859-1\")\n",
+        "houses = houses[houses['price'] > 30000]\n",
+        "print(len(houses))\n",
+        "print(houses.head())"
       ],
       "execution_count": 0,
       "outputs": []
